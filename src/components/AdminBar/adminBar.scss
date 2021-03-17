@@ -1,0 +1,42 @@
+// This file contains the scss code for the admin toolbar.
+
+.admin__bar {
+  display: inline-block;
+  width: 100%;
+  background-color: #1e1f22;
+  height: 3.5rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  padding: 0 10px;
+  //no padding on margins
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul {
+    // text on the right side of admin toolbar.
+    float: right;
+
+    li {
+      display: inline-block;
+
+      // adding hover effects on the admin button & display features
+      a {
+        display: block;
+
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        line-height: 1;
+        color: white;
+        padding: 8px;
+
+        &:hover {
+          //box turns to a #ebe7d9 color when hovered over. and text will turn black.
+          background-color: #ebe7d9;
+          color: black;
+        }
+      }
+    }
+  }
+}

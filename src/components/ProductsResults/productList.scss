@@ -1,0 +1,125 @@
+//this page styles the search page and the browse menus where you can browse the technolgy items on sale.
+
+// h1 {
+//   // styling the header 'browse products'
+//   //background-color: yellow;
+//   text-align: center;
+//   // textsize large enough
+//   font-size: 42px;
+// }
+
+//here we make the products page more responsive
+//we give it a max-width of 980px
+// when screen size is minimized then one product is shown at a time rather than three
+@media only screen and (max-width: 980px) {
+  //this responsiveness is specifically added to the products list on th browse page
+  .product_available {
+    width: 100%;
+  }
+}
+
+//how the products displayed on the ecommerce site
+
+.products {
+  display: block;
+
+  //space from navabar/header element 1.5 margin suitable.
+  margin: 1.5rem 0;
+  //products take full width of the page availbale
+  width: 100%;
+  //no padding needed
+  padding: 0;
+
+  .products__list {
+    //flex container expands items to fill available free space or reduces size to stop overflow.
+    display: flex;
+    //flexible item wrap
+    flex-wrap: wrap;
+    // margin 2rem from showall dropdown menu. 8px size.
+    margin: 2rem -5px 0;
+  }
+}
+
+//stylign  each individual item.
+.product_available {
+  //ensure that each item takes 33.33.. so that 3 can fit in each row.
+  width: 33.333333333333333%;
+  //space between the each product(margin) up and down.
+  margin: 0 auto 1.5rem;
+  //so each product is seprated rather than stuck together, space to sides of product
+  padding: 0 12px;
+
+  //styling products image
+  .thumb {
+    //block element.
+    display: block;
+    width: 100%;
+
+    img {
+      //image displayed as block
+      display: block;
+      //image takes 100% width avaible
+      width: 100%;
+      // no margin needed with img
+      margin: 0;
+    }
+  }
+  //styles product info: ProductName,price, add to cart etc.
+
+  //styles positioning of eleents in line with eachother, make it look neat.
+  ul,
+  ul li {
+    padding: 0;
+    margin: 0;
+  }
+
+  .product__information {
+    display: block;
+
+    padding: 1rem 0;
+    //margin 0 up and down and auto distrubte right margin .
+
+    //margin between the the next row of elements
+    margin: 0 auto;
+    //width 100% same as image width
+    width: 100%;
+
+    ul {
+      li {
+        display: block;
+        //details take 100% width available
+        width: 100%;
+        //remove bullet points etc
+        list-style-type: none;
+        //text start from left as natural order
+        text-align: left;
+        // margin: 0 0 0.5rem;
+
+        //product price styling
+        .product__price {
+          font-size: 1.5rem;
+          font-weight: 500;
+          line-height: 1.5;
+        }
+
+        //calls all links and changes it to black
+        a {
+          color: black;
+        }
+
+        //products names styling
+        .product__name {
+          font-size: 2rem;
+          font-weight: 500;
+          line-height: 1;
+        }
+
+        //addtocartbutton styling
+        .add__basket {
+          // 2rem below product info
+          margin: 2rem 0 0 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+//this page styles the forms, for effeciency purposes and to avoid reptition the forms are styles here so they can be inherited by other pages etc register and sign in pages.
+
+.form__cont1 {
+  // sets the availble width and the max width when screen is maximised.
+
+  max-width: 45rem;
+  width: 100%;
+  display: block;
+  margin: 3.5rem auto 6rem;
+  //a thick black line around the container which contains the form
+  border: 1.8px solid black;
+
+  .cont {
+    padding: 10px;
+
+    h2 {
+      //header for the form
+      font-size: 1.9rem;
+      //distance between elemnts 1.
+      line-height: 1;
+      text-transform: uppercase;
+      //header in the centre of box
+      text-align: center;
+      display: block;
+      width: 100%;
+      margin: 0.2rem auto 2.5rem;
+      padding: 1px;
+      font-weight: 500;
+    }
+  }
+}

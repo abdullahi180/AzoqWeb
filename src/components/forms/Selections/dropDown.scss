@@ -1,0 +1,45 @@
+//this file styles the selections- drop down menu
+
+.form__cont {
+  //disolayed as inline block
+  display: inline-block;
+  width: 100%;
+
+  label {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  //styles the selections boxes
+  select {
+    //displayed as block items
+    display: block;
+    //the width is automatically defined dependin g on text size.
+    width: auto;
+
+    //size of text
+    font-size: 1.25rem;
+    //align text from left handside
+    text-align: left;
+    //specifies height of line
+    line-height: 1;
+    // specifies boldness of text
+    font-weight: 455;
+
+    //displayed from the left side of the page
+    float: left;
+    //padding vertical to give more space, no padding needed for horizontal
+    padding: 5px 0px;
+
+    //vertical margin from elements above
+    margin: 5px auto;
+
+    //no border or outline- they are rmeoved
+    border: none;
+    outline: none;
+
+    //the cursor chnages to pointer to user knows its clickable.
+    cursor: pointer;
+  }
+}

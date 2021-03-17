@@ -1,0 +1,85 @@
+// this file styles the pop up modal in the admin menu, when an admin clicks add new product, astyled modal should appear rather than having the form appear below.
+
+.popUp__background {
+  top: 0;
+  left: 0;
+  //we want the background overlay to cover the full page when the modal appears.
+  width: 100%;
+  height: 100%;
+  //positon fixed so that element always in same place regradles of scrolling
+  position: fixed;
+  // a shaded color so user can clearnly disinquish and recognise the modal.
+  background-color: rgba(0, 0, 0, 0.42);
+}
+
+.popUp__container {
+  //positon fixed so that element always in same place regradles of scrolling
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  //positoning relative to page, width and height of modla should cover as much space suitable.
+  width: 100%;
+  height: 100%;
+
+  //this is set to none so that the element does not react to pointer events
+  pointer-events: none;
+
+  //style the modal itself
+  .popUp__modal {
+    //positons itslef on top of its ancestor/ parent element.
+    position: absolute;
+
+    //50% from left and top ensures that the modal appears in the middle of the page.
+    top: 50%;
+    left: 50%;
+    //webkit transform prefix helps with safari/chrome /prefix.
+
+    //translate location on the page
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    //greyish color background for modal
+    background-color: rgb(235, 235, 235);
+    //width of modal relative to background page
+    width: 85%;
+
+    //max width when page is enlarged
+    max-width: 55rem;
+
+    padding: 3.9rem;
+
+    // height: 55rem;
+    //The element can be the target of a pointer event when the pointer is over it.
+    pointer-events: all;
+    //minimum heigght of modal when page is minimised/maximised.
+    min-height: 45rem;
+    //this gives it a mex-height
+    max-height: 95vh;
+    // tomake the page more responsive, if overflow occurs, a scroll-bar should be added to see the rest of the content
+    overflow: auto;
+
+    //the company logo on the pop up modal
+    .azoq__Logo {
+      //width of azoq logo
+      width: 13rem;
+      //position absolute
+      position: absolute;
+
+      //i wanted the logo exactly in the top left corner so in order for that we have to set left and top to 0.
+      top: 0%;
+      left: 0px;
+
+      //targets the image
+      img {
+        //display the azoq logo image as a block
+        display: block;
+        //size is 35% width
+        width: 55%;
+        //0 margin
+        margin: 0;
+      }
+    }
+  }
+}

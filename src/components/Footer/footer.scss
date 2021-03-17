@@ -1,0 +1,9 @@
+// this page is the styling for the footer
+.footers {
+  .container {
+    //postions the footer, max width relative to page size defined in allpages.scss
+    max-width: 1550px;
+    padding: 23px 12px;
+    margin: 2px auto;
+  }
+}

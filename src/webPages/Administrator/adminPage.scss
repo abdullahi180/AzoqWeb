@@ -1,0 +1,78 @@
+//this page styles the admin page, where the admin can create or delete products.
+
+.Admin__page {
+  //15px away from left of the page, better orrientation
+  padding: 0 15px;
+
+  //
+  .PopUp__button {
+    ul,
+    li {
+      //pacement of add product button, no margin or padding needed between the button and manage products.
+      margin: 0;
+      padding: 0;
+      //removes bullet point or any marker shown
+      list-style-type: none;
+    }
+
+    ul {
+      li {
+        //styls the button to a good size, set width and height.
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.content__manager {
+  //styles the h1 element, the main header
+  h1 {
+    //distance between the elemnet above it.
+    margin-top: 3.5rem;
+    text-align: center;
+  }
+
+  //table of products when admin adds new product
+  table.results {
+    tr {
+      //every even product on list etc 2,4,6.. has diffrent color.
+      &:nth-child(even) {
+        background-color: rgb(210, 210, 210);
+      }
+      //styling image
+      .thumb {
+        width: 18rem;
+        //margin right.left set to 0 , with top/bottom set to automatically.
+        margin: 0 auto;
+      }
+    }
+  }
+}
+//here to improve our responsiveness we set the max screen width 580px.
+@media only screen and (max-width: 580px) {
+  //we apply this to this method
+  .content__manager {
+    //the table width is 80% when the page is minimised.
+    table {
+      width: 80%;
+      //this width is assigned to 100% of page when its minimised
+      .results {
+        width: 100%;
+
+        tr td {
+          //the table data is displayed as block
+          display: block;
+          //width is 100%
+          width: 100%;
+          //this targets the image
+          img {
+            //disolayed as block element
+            display: block;
+            //the !important rule  below will overrides our previous width.
+            width: 100% !important;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+//this page styles the basket page, contains all elemnts added into the basket, into tables/ formats the tabke and heading.
+
+@media only screen and (max-width: 980px) {
+  .basket__header {
+    display: none;
+  }
+
+  .cartItem {
+    border: 1px solid black;
+  }
+
+  .checkout .cart td {
+    display: block;
+    width: 100%;
+  }
+
+  .Basket .basket__features.remove {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+  }
+}
+
+.Basket {
+  //   background-color: red;
+
+  // margin of 1.8 form the navbar, suitable
+  margin: 1.8rem auto;
+
+  // display the header as a block with 100% width
+  h1 {
+    display: block;
+    width: 100%;
+  }
+  //alight the header to the centre of the page above the table of items in the basket
+  h1 {
+    text-align: center;
+  }
+
+  .basket__header {
+    border-bottom: 5px solid;
+  }
+  //sets max width of table to 110 rems
+  .basket__checkout {
+    max-width: 110rem;
+    margin: 0 auto;
+
+    table {
+      width: 100%;
+    }
+  }
+
+  .checkout__header,
+  .basket__checkout {
+    //aligns table items starting from left, natural order for website.
+    width: 100%;
+    text-align: left;
+
+    th,
+    td {
+      // size of table elements
+      width: 25%;
+    }
+  }
+  // format image and table elemts size
+  .cartItem {
+    td img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .cartBtns {
+    //displays as a block type.
+    display: block;
+    width: 100%;
+  }
+
+  .basket__features {
+    //changes the cursor type to featues such as when clicking increase quantity so user knows its clickable.
+    cursor: pointer;
+  }
+}

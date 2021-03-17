@@ -1,0 +1,16 @@
+//this page targets the process payment page.
+
+//targets all the payment details/ displayed in block format
+.payment__details {
+  display: block;
+  width: 100%;
+  //maxwidth when the page is maximised
+  max-width: 90rem;
+  padding: 0;
+  margin: 1rem auto;
+
+  .class {
+    //targets the margin between the two classes - billing and shipping
+    margin: 0 0 4rem;
+  }
+}

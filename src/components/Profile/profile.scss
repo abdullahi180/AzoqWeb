@@ -1,0 +1,52 @@
+// this page styles the admin menu to make it look more aesthetically pleasing and professional.
+
+//target the whole profile
+.admin__profile {
+  display: block;
+  width: 100%;
+  margin: 3rem auto 1rem;
+
+  ul,
+  li {
+    //set margin paddig to 0
+    margin: 0;
+    padding: 0;
+    //removes bi=ullet point list type
+    list-style-type: none;
+  }
+
+  ul {
+    li {
+      display: block;
+      //profile takes into account 100% of page.
+      width: 100%;
+
+      .img {
+        display: block;
+        width: 16rem;
+        margin: 0 auto;
+        //targets profile pic/ admin can have his own picture/ costumisation.
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+      //styling admin name
+      .admin__name {
+        //display name as block
+        display: block;
+        width: 100%;
+
+        //place text centre, 2rem away from profile pic
+        text-align: center;
+        margin: 2rem auto;
+
+        //large text size header
+        font-size: 2rem;
+        line-height: 1;
+        //name text chnaged to caps.
+        text-transform: uppercase;
+      }
+    }
+  }
+}

@@ -1,0 +1,119 @@
+//this file styles the all pages layouts.
+
+// the general html size for this web application will be 10px
+html {
+  font-size: 10px;
+}
+
+//0 padding and amrgin on genreal web alyout
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+//root declares global variabl for all pagese
+//height targets specifically the homepage.
+html,
+body,
+#root,
+.App,
+.height {
+  height: 100%;
+}
+// defines all pages height/ givin git maximum height property
+html,
+body,
+#root,
+.App,
+.fullHeight {
+  height: 100%;
+}
+
+// styles the body part of all the pages
+body {
+  font-weight: 450;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1;
+  //background color for all pages
+  background-color: rgb(235, 235, 235);
+}
+//all links look clickable/no text decoration
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+//targetting h1
+h1 {
+  //text start from left side
+  text-align: center;
+  //give the h1 100width, relevant to pageaize
+  width: 100%;
+  padding: 0;
+  margin: 0 auto 1.8rem;
+  font-size: 2rem;
+  line-height: 3.3rem;
+  //displayed as block
+  display: block;
+  //blackcolor text for all pages with h1
+  color: #000000;
+  border-bottom: #d3d3d3;
+
+  font-weight: 450;
+  //all h1 transformed to uppercase text
+  text-transform: uppercase;
+}
+
+h2 {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto 2rem;
+  font-size: 2.5rem;
+  line-height: 2.7rem;
+  color: #000000;
+  text-align: left;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-bottom: #d3d3d3;
+}
+
+//styling for all pages/ page orrientation
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+//hover effects, transitions
+a,
+a:hover {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+// size of the page- main part of the page(minus navbar
+.main {
+  //calculate the mainj part of the page taking away the navbar
+  height: calc(100% - 6.5rem);
+  max-width: 1450px;
+  padding: 0px 10px;
+  //up and down margin is automatically defined
+  margin: 0 auto;
+  //give the main part of theb page 100% width
+  width: 100%;
+}
+
+//we aim to make all page son this web application resposive-
+//we give a max-width of 980px
+//when the screen is minimized all content shoudl slowly minimise too.
+@media only screen and (max-width: 980px) {
+  //for instance here we minimse all text to 9
+  html {
+    //font-9
+    font-size: 9px;
+  }
+}

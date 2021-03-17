@@ -1,0 +1,32 @@
+//this page styles the buttons, for effeciency purposes and to avoid reptition the buttons are styled here so they can be inherited by other pages with submit buttons or checkout etc.
+
+.button {
+  display: inline-block;
+  width: 100%;
+
+  //all text upercase - consistency
+  text-transform: uppercase;
+  margin: 0 auto;
+
+  outline: none;
+
+  //font size of text in the button
+  font-size: 1.4rem;
+  //line height 1- suitabe size
+  line-height: 1;
+  //thickens text to 350
+  font-weight: 350;
+
+  //curson changes to pointer wo user knows its clickable.
+  cursor: pointer;
+  //red color company logo
+  background: #f55139;
+
+  padding: 0.8rem 12px;
+  border: 2px solid black;
+
+  //hover effect on button when user attempts to clickn button.
+  &:hover {
+    background: #ebe7d9;
+  }
+}
