@@ -403,6 +403,31 @@ const PaymentFormComp = () => {
 
           <CardElement options={createCardElement} />
         </div>
+
+        <p>
+          {" "}
+          Please Comfirm you have read our terms and conditions before you
+          proceed.
+        </p>
+
+        <input
+          type="checkbox"
+          id="Conditions"
+          name="comfirm"
+          value="Boat"
+          required
+        ></input>
+
+        <p> Please Comfirm all your details are correct.</p>
+
+        <input
+          type="checkbox"
+          id="review"
+          name="comfirm"
+          value="Boat"
+          required
+        ></input>
+
         {/*the payment submission button */}
         <Buttons type="submit">Pay Now</Buttons>
       </form>

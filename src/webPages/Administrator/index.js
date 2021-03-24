@@ -46,6 +46,9 @@ const Admin = (props) => {
   const [productCategory, assignProductType] = useState("tv's");
   //the intial state is blank string- admin created products name
   const [productName, assignProductName] = useState("");
+
+  //our stock update function.- by default empty string
+  const [stock, assignstock] = useState("");
   //our product information and the update function.- by default empty string
   const [productInformation, assignProductInformation] = useState("");
   //here we have the productts image/update function
@@ -85,6 +88,8 @@ const Admin = (props) => {
     assignConcealPopUp(true);
     //reset back to empty string
     assignProductInformation("");
+    //resert back to empty string
+    assignstock("");
   };
 
   //this constant handles the event when the user submits this form
@@ -101,6 +106,8 @@ const Admin = (props) => {
         productName,
         //the products thumbnail/image
         productThumbnail,
+        //stock info
+        stock,
         //products price
         productPrice,
         //product infomation
@@ -212,6 +219,17 @@ const Admin = (props) => {
               value={productThumbnail}
               //on the event user enters url we assign the image to thhe product
               handleChange={(e) => assignProductImg(e.target.value)}
+            />
+
+            <Input
+              //this is our stock field
+              label="Stock"
+              //type text
+              type="text"
+              //the value is the product price
+              value={stock}
+              //on the event stock price- we assign a tock value to that product.
+              handleChange={(e) => assignstock(e.target.value)}
             />
 
             <Input

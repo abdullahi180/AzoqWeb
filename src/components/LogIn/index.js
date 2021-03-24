@@ -91,6 +91,13 @@ const LogIn = (props) => {
             placeholder="Password"
             handleChange={(e) => setPassword(e.target.value)}
           />
+          {/*terms and condition for azoq web application */}
+          <p>
+            {" "}
+            By Signing in you agree to AZoQ's Conditions of Use & Sale. Please
+            see our Terms and conditions.
+          </p>
+
           {/*submission- user clicks sign up- triggers/calls handleFromSubmission. */}
           <Buttons type="submit"> Sign in</Buttons>
 

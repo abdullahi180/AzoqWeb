@@ -133,6 +133,7 @@ const CreateAcc = (props) => {
             placeholder="Password"
             handleChange={(e) => setPass1(e.target.value)}
           />
+          {/*Validation- user has to repeat password twice. */}
           <Input
             type="password"
             name="repeatPassword1"
@@ -140,6 +141,22 @@ const CreateAcc = (props) => {
             placeholder="Re-enter Password"
             handleChange={(e) => setRepeatPassword1(e.target.value)}
           />
+          <p>
+            {" "}
+            By Creating an account you agree to AZoQ's Conditions of Use & Sale.
+            Please see our Terms and Conditions.
+          </p>
+          <p>
+            Tick the box below to cofirm you have read our term and conditions.
+          </p>
+          <input
+            type="checkbox"
+            id="Conditions"
+            name="comfirm"
+            value="Boat"
+            required
+          ></input>
+          <br />
           {/*submission- user clicks sign up- triggers/calls handleFromSubmission. */}
           <Buttons type="submit">Sign up</Buttons>
         </form>

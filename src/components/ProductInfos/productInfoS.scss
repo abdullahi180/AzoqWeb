@@ -1,0 +1,57 @@
+//this is the styling page for my products information page
+
+//targets this whole section
+.product__information {
+  //the maximum width for the products infromation section
+  max-width: 85rem;
+  //auto margin and 10 rem
+  margin: 0 auto 10rem;
+
+  //target the product image region/div
+  .product__thumbnail {
+    //displayed as a block- enables to take as much width as possible
+    display: block;
+    //100% width assigned
+    width: 100%;
+    //2.2 vertical margin and auto horizontal
+    margin: 2.2rem auto;
+
+    img {
+      //display img as block- image takes full width.
+      display: block;
+      //auto margin right
+      margin-right: auto;
+      //auto magin left
+      margin-left: auto;
+      //image in centre- and and porportianlly take 50% of page
+      width: 50%;
+    }
+  }
+  //target the products information sub section
+  .product__info {
+    //i place the product information into a unordered list
+
+    ul,
+    ul li {
+      //no padding and margin
+      padding: 0;
+      margin: 0;
+    }
+
+    ul li {
+      // setting this to none will mean no item marker is shown etc buttel point.
+      list-style-type: none;
+      //1 rem margin horizontally
+      margin: 0 auto 1rem;
+      //no margin on the products name
+      h1 {
+        margin: 0;
+      }
+    }
+  }
+  //targets the add to basket button
+  .add__Basket {
+    //max with 18 rem when page is enlarged
+    max-width: 18rem;
+  }
+}

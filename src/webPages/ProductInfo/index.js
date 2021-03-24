@@ -1,3 +1,7 @@
+//This was a static page- to be used for each product- However i opted agaist using this page so this will not be displayed on the web application like this.
+
+//this was just temporary solution if i didnt get it to work dynamically
+
 //this page contains code for the product details for each product.  Below is details about a specific TV.
 
 //import react
