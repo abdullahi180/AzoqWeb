@@ -1,21 +1,36 @@
-.header {
-  height: 6.5rem;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-  background-color: rgb(235, 235, 235);
-  .wrap {
-    position: relative;
-    height: 100%;
-    max-width: 1450px;
-    margin: 0 auto;
+//This file contains the code that styles the navbar
 
-    .logo {
-      width: 13rem;
-      position: absolute;
-      top: 50%;
-      left: 10px;
+.navbar {
+  //box shaodw features
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  //the navbar backgorund calour
+  background-color: rgb(235, 235, 235);
+  //navbar ehight
+  height: 6.5rem;
+  .cont {
+    //relative pos
+    position: relative;
+    //max width- screen szie
+    max-width: 1450px;
+    //margin
+    margin: 0 auto;
+    //take 100% of height
+    height: 100%;
+
+    //company logo
+    .Azoqlogo {
+      //webkit tranforms- trandlation
       -webkit-transform: translateY(-50%);
       -moz-transform: translateY(-50%);
       transform: translateY(-50%);
+      //width 13 rem - good fit size
+      width: 13rem;
+      //pos absolute
+      position: absolute;
+      //top - 50%
+      top: 50%;
+      //left 10 pixels
+      left: 10px;
 
       img {
         display: block;
@@ -23,54 +38,70 @@
         margin: 0;
       }
     }
-
+    //styling the navbar
     nav {
-      display: block;
-      width: 100%;
-      height: 100%;
+      //0 paddig  and margin
       padding: 0;
       margin: 0;
-
+      //take 100% height and width
+      width: 100%;
+      height: 100%;
+      //display as block elemenent
+      display: block;
+      //the list itmes
       ul,
       ul li {
-        padding: 0;
+        //no paddign and margin
         margin: 0;
+        padding: 0;
+        //take 100% hright
         height: 100%;
       }
-
+      //alight the text at cenrte- nav bar element
       ul {
         text-align: center;
-
+        //displat it inline blok with 1 rem margin
         li {
           display: inline-block;
           margin: 0 1rem;
+          //no bullet poitn / list typr
           list-style-type: none;
-
+          //target links
           a {
-            font-size: 1.8rem;
-            line-height: 6.5rem;
-            vertical-align: middle;
-            color: black;
-            text-decoration: none;
+            //all text uper case
             text-transform: uppercase;
+            //pointer to show links
             cursor: pointer;
+            //font size
+            font-size: 1.4rem;
+            //line height
+            line-height: 6.5rem;
+            //vertical allign
+            vertical-align: middle;
+            //blacl
+            color: black;
+            //no text deco
+            text-decoration: none;
           }
         }
       }
     }
-
-    .callToActions {
-      position: absolute;
-      top: 50%;
-      right: 10px;
+    //targe other navbar element
+    .actions {
+      //webkit tranforms- trandlation
       -webkit-transform: translateY(-50%);
       -moz-transform: translateY(-50%);
       transform: translateY(-50%);
+      //position absolute
+      position: absolute;
+      //positoon of elements on navbar
+      top: 50%;
+      right: 10px;
 
       i {
         display: none;
       }
-
+      //no margin or padding
       ul,
       li {
         margin: 0;
@@ -78,83 +109,108 @@
       }
 
       li {
-        display: inline-block;
-        list-style-type: none;
-        margin-right: 1.5rem;
-
+        //The :last-child selector matches every element that is the last child of its parent.
+        //0 margin right
         &:last-child {
           margin-right: 0;
         }
-
+        //inline block
+        display: inline-block;
+        //no list type
+        list-style-type: none;
+        //1.5 right margin
+        margin-right: 1.5rem;
+        //targets links and span
         a,
         span {
-          font-size: 1.8rem;
-          line-height: 1;
+          //black font
           color: black;
+          //to text deco
           text-decoration: none;
+          //all text upper case
           text-transform: uppercase;
+          //pojter for links
           cursor: pointer;
+          //font size consistecy 1.4
+          font-size: 1.4rem;
+          //line height 1
+          line-height: 1;
         }
       }
     }
   }
 }
-
+//mobile menu
 .mobileMenu {
   display: none;
 }
-
+//screen sizes - responsiveness
 @media only screen and (max-width: 1000px) {
+  //display as bloack
   .mobileMenu {
     display: block;
   }
-
-  .header .wrap {
-    .callToActions {
+  //target navbar, container and action links
+  .navbar .cont {
+    .actions {
+      //dislay as inine block when page is resized
       i {
         display: inline-block;
       }
-
+      //hide some element when page is miminsed
       ul li {
         &.hideOnMobile {
           display: none;
         }
-
+        //links change font to 0 - dissapear when page is minimised
         a,
         span {
           font-size: 0;
-
+          //font size 1.4
           i {
-            font-size: 1.8rem;
+            font-size: 1.4rem;
           }
         }
       }
     }
-
+    //targets main menu
     .mainMenu {
-      display: none;
-      position: absolute;
-      height: auto;
+      //from top 100%
       top: 100%;
+      //left 0
       left: 0;
+      //z-10
       z-index: 10;
+      //black backgrounf
       background-color: black;
+      //border bottom
       border-bottom: 1px solid lightgray;
-
+      //none display
+      display: none;
+      //absolute postion type
+      position: absolute;
+      //height automatically defined
+      height: auto;
       &.active {
         display: block;
       }
 
       ul li {
+        //100% width
         width: 100%;
+        //0 margin
         margin: 0;
+        //1pixel border up and is solid grey
         border-top: 1px solid lightgray;
-
+        //links
         a {
+          //text aligned from left
+          text-align: left;
+          //0 padding/ and 10
+          padding: 0 10px;
+          //dipslay as block element
           display: block;
           width: 100%;
-          text-align: left;
-          padding: 0 10px;
         }
       }
     }

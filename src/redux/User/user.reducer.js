@@ -6,8 +6,10 @@ const INITIAL_STATE = {
   sucessfulPassReset: false,
 };
 
+//user reducer
 const userReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
+    //user succesfully logged in /store update
     case userTypes.SUCESSFUL_LOGIN:
       return {
         ...state,

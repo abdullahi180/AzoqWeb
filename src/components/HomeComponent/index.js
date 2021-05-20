@@ -2,6 +2,7 @@
 
 //IMPORTS
 
+//import carousel images -created using gimp
 import lapcaro from "./../../images/lapgimp.png";
 import tvcaro from "./../../images/tvgimp.png";
 import phonecaro from "./../../images/Iphongimp.png";
@@ -40,6 +41,7 @@ const HomeComponent = (props) => {
 
     <div className="homeP">
       <div className="zan">
+        {/*code below is to constuct carousel and apply attribures */}
         <Carousel
           autoPlay={true}
           infiniteLoop={true}
@@ -51,6 +53,7 @@ const HomeComponent = (props) => {
           // transitionMs={2000}
           // autoPlaySpeed={6000}
         >
+          {/*this below is the carousel images */}
           <div className="Za">
             <img src={lapcaro} alt="AzoQ_logo" />
           </div>

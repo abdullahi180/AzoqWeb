@@ -24,6 +24,8 @@ import Admin from "./webPages/Administrator";
 import SignIn from "./webPages/SignIn";
 import Home from "./webPages/Home";
 import Contact from "./webPages/Contact";
+import AboutUs from "./webPages/AboutUs";
+import Terms from "./webPages/Terms";
 import ProductInformation from "./webPages/ProductInfo";
 import ProductDetails from "./webPages/ProductDetails";
 import Panel from "./webPages/Panel";
@@ -100,6 +102,30 @@ const App = (props) => {
             //main page setup - wrap it around the component
             <MainPageSetUp>
               <Contact />
+            </MainPageSetUp>
+          )}
+        />
+        <Route
+          //exact match to route
+          exact
+          //path
+          path="/aboutUs"
+          render={() => (
+            //main page setup - wrap it around the component
+            <MainPageSetUp>
+              <AboutUs />
+            </MainPageSetUp>
+          )}
+        />
+        <Route
+          //exact match to route
+          exact
+          //path
+          path="/terms"
+          render={() => (
+            //main page setup - wrap it around the component
+            <MainPageSetUp>
+              <Terms />
             </MainPageSetUp>
           )}
         />

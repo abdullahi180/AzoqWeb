@@ -21,7 +21,8 @@ import Buttons from "../forms/Button";
 //styling for this page
 import "./productInfoS.scss";
 //import from react-router
-import { useParams, useHistory } from "react-router-dom";
+import { useParams, useHistory, Link } from "react-router-dom";
+
 //maps products
 const mapState = (state) => ({
   product: state.productsData.product,
@@ -109,6 +110,11 @@ const Productinfos = ({}) => {
                 onClick={() => handleBasketAddition(product)}
               >
                 Add to Basket
+              </Buttons>
+              {/*this below are the buttons at the bottom of the basket page. */}
+              {/*we imported history so we could have the functionality below, it would take you back to the page user came from */}
+              <Buttons onClick={() => history.goBack()}>
+                Continue shopping
               </Buttons>
             </div>
           </li>

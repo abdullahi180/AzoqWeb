@@ -174,7 +174,7 @@ const PaymentFormComp = () => {
           })
           .then(({ paymentMethod }) => {
             //stripe functions
-            //comfirms payment
+            //confirms payment
             stripe
               .confirmCardPayment(clientSecret, {
                 payment_method: paymentMethod.id,
@@ -406,7 +406,7 @@ const PaymentFormComp = () => {
 
         <p>
           {" "}
-          Please Comfirm you have read our terms and conditions before you
+          Please Confirm you have read our terms and conditions before you
           proceed.
         </p>
 
@@ -418,7 +418,7 @@ const PaymentFormComp = () => {
           required
         ></input>
 
-        <p> Please Comfirm all your details are correct.</p>
+        <p> Please Confirm all your details are correct.</p>
 
         <input
           type="checkbox"

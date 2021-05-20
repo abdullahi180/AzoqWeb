@@ -42,6 +42,10 @@ const ExtendedOrderHistory = () => {
     <div>
       {/*page title - includes unique order ID */}
       <h1>Order ID: #{orderID}</h1>
+      <h3>
+        You order will arive within the 7-10 days of purchase. Do not hesitate
+        to contact us regarding any queries you have.
+      </h3>
       {/*order details displayed on page */}
       <OrderDetails order={orderDetails} />
       {/*total price of order dislayed on page. */}

@@ -1,29 +1,40 @@
-//this file contains the code for the contact page on this webapplication
+//This file contains code for the admin page. this file contais the code allows a pop up form to be dipslayed so the admin can create a product, admin can also delete a product. The admins profile is also displayed here.
 
-//IMPORTS
+//Import react and import our react hooks
+import React, { useState, useEffect } from "react";
+import logoAbout from "./../../images/logoAbout.png";
 
-//import react
-import React from "react";
 //constant
-const Contact = ({}) => {
-  //return what is dislayed on the page.
+const AboutUs = (props) => {
+  //return
   return (
-    <div className="contact__header">
-      {/*page title */}
-      <h1>Contact</h1>
+    <div className="admin__profile">
+      <ul>
+        <li>
+          {/* creates a div tag for the image, displays backgorund image */}
+          <div className="img">
+            <img src={logoAbout} />
+          </div>
+        </li>
+        <li>
+          <span className="admin__name">Contact</span>
+        </li>
+      </ul>
 
-      {/*Email  */}
-      <h3>Email us on:</h3>
-      <ul>
-        <li>✉ customerService@AZoQ.com</li>
-      </ul>
-      {/*phone number] */}
-      <h3>Call us on:</h3>
-      <ul>
-        <li>☎ 0800 121 2121</li>
-      </ul>
+      <div className="about">
+        {/*Email  */}
+        <h3>Email us on:</h3>
+        <ul>
+          <li>✉ customerService@AZoQ.com</li>
+        </ul>
+        {/*phone number] */}
+        <h3>Call us on:</h3>
+        <ul>
+          <li>☎ 0800 121 2121</li>
+        </ul>
+      </div>
     </div>
   );
 };
-//export so it can be inehrited by other pages.
-export default Contact;
+//export this aboutus webpage component wo we can inheirit it on the app.js file.
+export default AboutUs;

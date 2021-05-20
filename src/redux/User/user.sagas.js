@@ -54,6 +54,7 @@ export function* handleEmailLogin({ payload: { email, pass1 } }) {
   try {
     //auth- from firebase
     //sign in with email and password-n when user is signing in
+    //yield firebase auth mehtod- prvided by firebase- used for login fform
     const { user } = yield auth.signInWithEmailAndPassword(email, pass1);
 
     yield getSnapshotFromUserAuth(user);
